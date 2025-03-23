@@ -1,0 +1,32 @@
+.copyright{
+    padding: 30px 0;
+    margin-top: 56px;
+    border-top:1px solid var(--dark-color);
+}
+.copyright-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-socials{
+    display:flex;
+    gap: 30px;
+    align-items: center;
+}
+.footer-socials a{
+    color: var(--dark-color);
+    transition: var(--transition);
+    font-size:16px;
+}
+.footer-socials a:hover{
+    color: var(--main-color);
+}
+
+/*-----------    Media Queris    -----------*/
+
+@media(max-width:1024px){
+    .copyright-container{
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+}

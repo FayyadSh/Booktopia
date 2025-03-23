@@ -1,0 +1,47 @@
+.search-box{
+    position: relative;
+}
+.authors input {
+    width: 100%;
+    margin-top: 40px;
+    border-radius: 50px;
+    background: var(--second-background-color);
+    outline: none;
+    border: var(--dark-color) solid 1px;
+    padding: 15px;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    color: var(--main-color);
+    transition: .5s;
+}
+.search-box button{
+    position: absolute;
+    bottom: 35%;
+    right: 10px;
+    color: var(--main-color);
+}
+.search-icon{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.authors h3{
+    background: var(--ex-dark-color);
+    border-radius: 50px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: .5s;
+    padding-top: 20px;
+}
+
+/*-----------    Media Queris    -----------*/
+
+@media(max-width: 767px){
+    .authors h3{
+        width: 150px !important;
+        height: 80px;
+    }
+}

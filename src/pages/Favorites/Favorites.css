@@ -1,0 +1,34 @@
+.favorite-book {
+    position: relative;
+}
+
+.delete-icon {
+    position: absolute;
+    font-family: monospace;
+    font-size: 30px;
+    background: var(--background-color);
+    border-radius: 2px;
+    color: var(--main-color);
+    cursor: pointer;
+    padding: 0 6px;
+
+    /* Stick to the top-right corner */
+    right: 52px; /* Adjust to your preference */
+    top: 31px;
+}
+
+/*-----------    Media Queries    -----------*/
+
+@media (max-width: 767px) {
+    .delete-icon {
+        font-size: 25px; /* Optional: Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 540px) {
+    .delete-icon {
+        font-size: 20px; /* Optional: Further adjustments */
+        top: 12px; /* Adjust to your preference */
+        right: 40px; /* Adjust to your preference */
+    }
+}

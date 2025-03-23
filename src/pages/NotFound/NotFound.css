@@ -1,0 +1,17 @@
+.not-found{
+    height: calc(100vh - 100px);
+    padding: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--second-background-color);
+    border-bottom: 1px solid var(--dark-color);
+}
+.not-found .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
