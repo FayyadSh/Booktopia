@@ -1,0 +1,42 @@
+.favorite-book {
+    position: relative;
+    cursor: pointer;
+    margin: 10px;
+    width: 160px;
+    height: 256px;
+}
+
+.delete-icon {
+    position: absolute;
+    font-family: monospace;
+    font-size: 30px;
+    background: var(--background-color);
+    border-radius: 2px;
+    color: var(--main-color);
+    cursor: pointer;
+    padding: 0 6px;
+    right: -5px; /* Small offset from the edge */
+    top: 35px; /* Small offset from the top */
+    z-index: 2; /* Ensure it appears above the image */
+}
+
+/* Media Queries - Match your book component sizing */
+@media (max-width: 767px) {
+    .delete-icon {
+        top: 15px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 540px) {
+    .favorite-book {
+        width: 106px;
+        height: 170px;
+    }
+    /* Adjust icon size for smaller screens */
+    .delete-icon {
+        font-size: 20px;
+        top: 12px;
+        right: -5px;
+    }
+}
