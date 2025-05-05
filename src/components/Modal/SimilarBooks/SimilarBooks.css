@@ -1,0 +1,18 @@
+.similar-books{
+    position: relative;
+}
+.similar-books:after{
+    content:'';
+    border-bottom:1px solid var(--main-color);
+    width: 60%;
+    position: absolute;
+    top: 30px;
+}
+
+/*--------------    Media Queris    ---------------*/
+
+@media(max-width: 767px){
+    .similar-books:after{
+        width: 90%;
+    }
+}

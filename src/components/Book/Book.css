@@ -1,0 +1,40 @@
+.book{
+    cursor: pointer;
+    margin: 10px;
+}
+.book-image{
+    transition: var(--transition);
+    box-shadow: 2px 2px gray,  7px 0 5px rgba(0, 0, 0, 0.327);
+}
+.large .book-image{
+    width: 213px;
+    height: 341px;
+}
+.medium .book-image{
+    width: 160px;
+    height: 256px;
+}
+.small .book-image{
+    width: 94px;
+    height: 150px;
+}
+
+/*--------------    Media Queris    ---------------*/
+
+@media(max-width: 1024px){
+    .large .book-image{
+        width: 160px;
+        height: 256px;
+    }
+}
+
+@media(max-width:540px){
+    .large .book-image{
+        width: 123px;
+        height: 196px;
+    }
+    .medium .book-image{
+        width: 106px;
+        height: 170px;
+    }
+}

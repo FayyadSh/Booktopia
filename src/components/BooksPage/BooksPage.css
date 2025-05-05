@@ -1,0 +1,18 @@
+.section-header{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1420px;
+    margin-top: 50px !important;
+    padding: 0 20px; 
+}
+
+/*-----------    Media Queries    -----------*/
+
+@media(max-width: 540px){
+    .section-header{
+        flex-direction: column;
+        width: 100%;
+    }
+}

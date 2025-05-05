@@ -1,0 +1,66 @@
+.top-rated-books{
+    background-color: var(--background-color);
+    transition: 1s;
+    padding: 30px 0;
+}
+.top-rated-book{
+    display: flex;
+    gap: 30px;
+    min-width: 100vw;
+}
+.tree-shape{
+    position: absolute;
+    left: 0;
+}
+.top-rated-book-image{
+    width: 266px;
+    height: 426px;
+    box-shadow: 2px 2px gray,  7px 0 5px rgba(0, 0, 0, 0.327);
+}
+.book-title{
+    width: 60%;
+    line-height: 35px;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+.top-rated-book-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.top-rated-book .btn{
+    position: absolute;
+    bottom: -30px;
+    width: 250px;
+}
+
+/*-----------    Media Queris    -----------*/
+
+@media(max-width: 1024px){
+    .book-title{
+        font-size: 20px;
+        width: 70%;
+        line-height: normal;
+    }
+}
+
+@media(max-width: 540px){
+    .top-rated-book{
+        flex-direction: column;
+    }
+    .top-rated-book .btn{
+        padding: 10px !important;
+        width: max-content;
+        bottom: -50px;
+    }
+    .top-rated-book-image{
+        width: 160px;
+        height: 256px;
+    }
+    .tree-shape{
+        left: -120px;
+    }
+    .book-rating{
+        font-size: 15px;
+    }
+}

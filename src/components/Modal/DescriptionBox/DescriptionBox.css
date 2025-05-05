@@ -1,0 +1,32 @@
+.description-box{
+    position: fixed;
+    width: 60vw;
+    height: 80vh;
+    transition: var(--transition);
+    top: 50px;
+    z-index: 8;
+    padding: 30px;
+    right: 0;
+}
+.description-box > div{
+    background: var(--second-background-color);
+    border-radius: 7px;
+    padding: 20px;
+    overflow-y: auto;
+    position: relative;
+    height: 100%;
+}
+.description-box p{
+    line-height: 1.5;
+    margin-top: 20px;
+}
+
+/*--------------    Media Queris    ---------------*/
+
+@media(max-width: 767px){
+    .description-box{
+        width: 80vw;
+        top: 20px;
+        padding: 10px;
+    }
+}

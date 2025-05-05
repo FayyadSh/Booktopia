@@ -1,0 +1,21 @@
+.best-selling-books{
+    background: var(--second-background-color);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: 1s;
+}
+.best-selling-books .btn{
+    position: absolute !important;
+    right: 40px !important;
+    bottom: 20px;
+}
+
+/*--------------    Media Queris    ---------------*/
+
+@media(max-width: 1024px){
+    .best-selling-books .btn{
+        right: 0px !important;
+        bottom: 50px;
+    }
+}

@@ -1,0 +1,143 @@
+/*-----------    Google Fonts    -----------*/
+
+@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Prata&display=swap");
+
+/*-----------    Global Rules    -----------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-weight: 400;
+  -webkit-tap-highlight-color: transparent;
+}
+:root {
+  --main-color: #7a6930;
+  --ex-black-color: #514242;
+  --dark-color: #7a7a7a;
+  --ex-dark-color: #e5e3da;
+
+  --background-color: #f3f2ec;
+  --second-background-color: #edebe4;
+
+  --font-family-prata: "Prata", serif;
+  --font-family-Jakarta: "Plus Jakarta Sans", sans-serif;
+
+  --transition: 0.4s ease;
+}
+
+html {
+  color: var(--dark-color);
+  font-family: var(--font-family-Jakarta);
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--font-family-prata);
+  text-transform: capitalize;
+}
+
+.btn {
+  color: var(--dark-color);
+  text-transform: uppercase;
+  transition: var(--transition);
+  cursor: pointer;
+  width: fit-content;
+  padding: 25px 70px;
+}
+
+.btn:hover {
+  color: var(--second-background-color);
+  background-color: rgb(43, 42, 42);
+}
+
+.btn-border {
+  border: 1px solid var(--dark-color);
+}
+
+button {
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1420px;
+  transition: var(--transition);
+}
+
+.rating-star {
+  color: rgb(225, 199, 52) !important;
+}
+
+section {
+  padding: 40px 0 !important;
+  transition: var(--transition);
+  background-color: var(--background-color);
+}
+
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin: 20px auto;
+  transition: 1s;
+}
+
+.long-title {
+  font-size: 20px;
+}
+
+/*-----------    Scrollbar Style    -----------*/
+
+::-webkit-scrollbar {
+  width: 10px;
+  transition: 1s;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background-color);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--dark-color);
+  border-radius: 50px;
+}
+
+/*-----------    Media Queries    -----------*/
+
+@media (max-width: 1024px) {
+  .books-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 540px) {
+  .books-grid {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+  }
+  .btn {
+    padding: 20px 30px;
+  }
+  .long-title {
+    font-size: 12px !important;
+  }
+
+  button:focus {
+    background: transparent !important;
+    outline: none !important;
+    color: var(--main-color) !important;
+}
+}

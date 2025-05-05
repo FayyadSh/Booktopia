@@ -1,0 +1,16 @@
+.error {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.error h1{
+    margin: 0 auto;
+}
+.error i {
+    margin: auto;
+    font-size: 90px;
+}
